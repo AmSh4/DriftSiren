@@ -78,5 +78,5 @@
         ├── docker-compose.yml
         ├── .env.example
         ├── structure/
-            └── README.md
+        |   └── README.md
         └── README.md
