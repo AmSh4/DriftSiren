@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres
+  namespace: driftsiren
+spec:
+  containers:
+  - name: postgres
+    image: postgres:16
+    env:
+    - name: POSTGRES_USER
+      value: driftsiren
+    - name: POSTGRES_PASSWORD
+      value: driftsiren
+    - name: POSTGRES_DB
+      value: driftsiren
+    ports:
+    - containerPort: 5432

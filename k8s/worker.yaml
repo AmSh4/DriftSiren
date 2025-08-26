@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worker
+  namespace: driftsiren
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: worker }
+  template:
+    metadata:
+      labels: { app: worker }
+    spec:
+      containers:
+      - name: worker
+        image: ghcr.io/example/driftsiren-backend:latest
+        command: ["celery","-A","app.celery_app.app","worker","--loglevel=INFO"]
+        env:
+        - name: POSTGRES_HOST
+          value: postgres
+        - name: REDIS_URL
+          value: redis://redis:6379/0

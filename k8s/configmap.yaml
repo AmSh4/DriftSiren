@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: driftsiren-config
+  namespace: driftsiren
+data:
+  CORS_ORIGINS: "http://localhost:3000"
