@@ -11,9 +11,8 @@ A production‑style, full‑stack platform to **detect data drift**, **monitor 
 - Role‑based users (stub/JWT) and organizations (demo scope).
 - Docker Compose one‑command startup. K8s manifests included for cluster deployments.
 
-## Project Structure
-
-      https://github.com/AmSh4/DriftSiren/tree/main/Structure
+## Project Structure  
+- https://github.com/AmSh4/DriftSiren/tree/main/Structure
 ##  Quick Start (Docker)
 1. Clone the repo and create `.env` from `.env.example`.
 2. Run: `docker compose up --build`.
