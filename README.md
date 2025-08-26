@@ -1,8 +1,7 @@
-# DriftSiren — Real‑Time Data Drift & Data Quality Monitoring Platform
+# DriftSiren  
+### `Real‑Time Data Drift & Data Quality Monitoring Platform`
 
 A production‑style, full‑stack platform to **detect data drift**, **monitor data quality**, and **alert in real time**.
-Built to look complex yet remain **runnable end‑to‑end** with Docker. Includes modern tooling recruiters love:
-**Next.js + Tailwind**, **FastAPI**, **PostgreSQL**, **Redis + Celery**, **WebSockets**, **Kubernetes manifests**, **CI/CD with GitHub Actions**.
 
 ## Key Features
 - Agent SDK sends datasets/events to the backend securely.
@@ -30,5 +29,3 @@ Built to look complex yet remain **runnable end‑to‑end** with Docker. Includ
 ## Security Notes
 Replace `SECRET_KEY`, add proper auth, HTTPS, and harden CORS before production.
 
-## 📄 License
-MIT
